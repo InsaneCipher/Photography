@@ -4,12 +4,12 @@
 <head>
 <title>Photography</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="FoodSite.css">
+<link rel="stylesheet" href="Photography.css">
 </head>
 
 <body>
 	<div class = "banner">
-		<h1>All About Bread</h1>
+		<h1>AG Photography</h1>
 	</div>
 
 	<!--Tabs-->
@@ -22,91 +22,94 @@
 	
 		<div class="tabs_column">
 			<div class="tabs">
-				<a href="Facts.html"> <p>Interesting Facts</p> </a>
+				<a href="index.html"> <p>Test</p> </a>
 			</div>
 		</div>
 		
 		<div class="tabs_column">
 			<div class="tabs">
-				<a href="Review.html"> <p>Feedback</p> </a>
+				<a href="index.html"> <p>Test</p> </a>
 			</div>
 		</div>
 		
 		<div class="tabs_column">
 			<div class="tabs">
-				<a href="About.html"> <p>About</p> </a>
+				<a href="index.html"> <p>About</p> </a>
 			</div>
 		</div>
 	</div>
 
 	<!--Row 1-->
 	<div class="row">
+		<!-- Row 1 -->
 		<div class="column">
-			<h2>Sourdough</h2>
-			<a href="Sourdough.html"> <img src="images/FS_Sourdough.jpg" style="width:100%"> </a>
+			<img class="photos" img id="photo" img src="photos/pic (1).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (2).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (3).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (4).jpg" alt="Taken in Edinburgh with Canon 1200D">
 		</div>
 		
+		<!-- Row 2 -->
 		<div class="column">
-			<h2>Multigrain</h2>
-			<a href="Multigrain.html"> <img src="images/FS_Multigrain.jpg" style="width:100%"> </a>
-		</div>
-
-		<div class="column">
-			<h2>Baguette</h2>
-			<a href="Baguette.html"> <img src="images/FS_Baguette.jpeg" style="width:100%"> </a>
+			<img class="photos" img id="photo" img src="photos/pic (5).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (6).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (7).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (8).jpg" alt="Taken in Edinburgh with Canon 1200D">
 		</div>
 		
+		<!-- Row 3 -->
 		<div class="column">
-			<h2>Ciabatta</h2>
-			<a href="Ciabatta.html"> <img src="images/FS_Ciabatta.jpg" style="width:100%"> </a>
+			<img class="photos" img id="photo" img src="photos/pic (9).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (10).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (11).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (12).jpg" alt="Taken in Edinburgh with Canon 1200D">
+		</div>
+		
+		<!-- Row 4 -->
+		<div class="column">
+			<img class="photos" img id="photo" img src="photos/pic (13).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (14).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (15).jpg" alt="Taken in Edinburgh with Canon 1200D">
+			<img class="photos" img id="photo" img src="photos/pic (16).jpg" alt="Taken in Edinburgh with Canon 1200D">
 		</div>
 	</div>
 	
-	<!--Row 2-->
-	<div class="row">
-		<div class="column">
-			<h2>Tiger Bread</h2>
-			<a href="TigerBread.html"> <img src="images/FS_TigerBread.jpg" style="width:100%"> </a>
-		</div>
-		
-		<div class="column">
-			<h2>Breadstick</h2>
-			<a href="Breadstick.html"> <img src="images/FS_Breadstick.jpg" style="width:100%"> </a>
-		</div>
 
-		<div class="column">
-			<h2>Pita Bread</h2>
-			<a href="PitaBread.html"> <img src="images/FS_Pita.jpg" style="width:100%"> </a>
-		</div>
-		
-		<div class="column">
-			<h2>Naan Bread</h2>
-			<a href="NaanBread.html"> <img src="images/FS_Naan.jpg" style="width:100%"> </a>
-		</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
 	</div>
+
+	<script>
+	// create references to the modal...
+	var modal = document.getElementById('myModal');
+	// to all images -- note I'm using a class!
+	var images = document.getElementsByClassName('photos');
+	// the image in the modal
+	var modalImg = document.getElementById("img01");
+	// and the caption in the modal
+	var captionText = document.getElementById("caption");
+
+	// Go through all of the images with our custom class
+	for (var i = 0; i < images.length; i++) {
+	  var img = images[i];
+	  // and attach our click listener for this image.
+	  img.onclick = function(evt) {
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	  }
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	</script>
 	
-	<!--Row 3-->
-	<div class="row">
-		<div class="column">
-			<h2>Cornbread</h2>
-			<a href="CornBread.html"> <img src="images/FS_CornBread.jpg" style="width:100%"> </a>
-		</div>
-		
-		<div class="column">
-			<h2>Banana Bread</h2>
-			<a href="Banana.html"> <img src="images/FS_BananaBread.jpg" style="width:100%"> </a>
-		</div>
-
-		<div class="column">
-			<h2>Garlic Bread</h2>
-			<a href="GarlicBread.html"> <img src="images/FS_GarlicBread.jpg" style="width:100%"> </a>
-		</div>
-		
-		<div class="column">
-			<h2>Soda Bread</h2>
-			<a href="SodaBread.html"> <img src="images/FS_SodaBread.jpg" style="width:100%"> </a>
-		</div>
-	</div>
 
 	<footer>
 	  <p>Made By Andras Gelle</p>  
