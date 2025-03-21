@@ -61,7 +61,7 @@ a:hover{color:#1d6faa}
 #logo .logo.site-title{margin:0;font-size:40px;display:inline-block}
 #logo .logo.site-title a{color:#000}
 #logo .logo.image{line-height:0;margin:0;display:block;width:340px;max-width:250px}
-#logo .logo.image img{width:340px;max-width:250px}
+#logo .logo.image img{width:400px;max-width:260px}
 #logo .logo-subtitle{font-family:"Helvetica",arial,sans-serif;font-weight:normal;font-family:proxima-nova;font-weight:400;font-style:normal;line-height:1.4em;text-transform:none;letter-spacing:0px;font-size:12px;color:#aaa;margin-top:.5em}
 #logo .logo.site-title{font-family:"Wire One","Helvetica",arial,sans-serif;font-weight:normal;line-height:1em;letter-spacing:0px;font-family:mrs-eaves;font-weight:400;font-style:normal;line-height:1.2em;text-transform:none;letter-spacing:2px}
 
@@ -105,7 +105,13 @@ a:hover{color:#1d6faa}
 
 
 /*hhhh*/
-@media only screen and (max-width:800px){.sqs-layout [class*=sqs-col]{float:none !important;width:auto !important}
+@media only screen and (max-width:1400px){.sqs-layout [class*=sqs-col]{float:none !important;width:auto !important}
+@media only screen and (min-width: 1400px) {
+    .mobileNav {
+        display: none !important;
+    }
+}
+
 
 #logo{margin-bottom:1em}
 #logo .logo.site-title{margin:0;display:inline-block}

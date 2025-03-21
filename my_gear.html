@@ -15,20 +15,43 @@
  <!--<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto enable-gallery-thumbnails social-icon-style-normal image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center  image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left  image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing  image-block-stack-text-alignment-left  mobile-style-available">
 	-->
 	<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-thumbnails homepage-gallery-view-thumbnails thumbnail-aspect-ratio-auto gallery-controls-simple social-icon-style-normal   show-category-navigation   event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link    product-list-titles-under product-list-alignment-center product-item-size-43-four-thirds  product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-gbp collection-6038d752427b3310d756959a collection-type-page collection-layout-default mobile-style-available" id="collection-6038d752427b3310d756959a"><div id="yui_3_17_2_1_1742427347879_251" class="yui3-widget sqs-widget sqs-announcement-bar">
+	<div id="canvasWrapper">
+    <div id="canvas">
 
+	
+	<div id="mobileNav" class="menu-open" style="height: 200px;">
+		<div class="wrapper">
+			<nav class="main-nav mobile-nav">
+				<ul>
+				 <li class="page-collection">
+				  <a href="index.html">
+				   Portfolio
+				  </a>
+				  <a href="index.html">
+				   Locations
+				  </a>
+				  <a href="my_gear.html">
+				   My Gear
+				  </a>
+				  <a href="my_gear.html">
+				   Contact
+				  </a>
+				 </li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+	
 	<div id="headerWrapper">
-     <header id="header">
-	  
-	  <div id="topNavMobile">
-          <nav id="mobileMenuLink" class="main-nav clear">
-			  <ul style="">
-				<li class="active-link"><a href="index.html">Portfolio</a></li>
-			  </ul>
-			  <ul style="">
-				<li class="active-link"><a href="index.html">My Gear</a></li>
-			  </ul>
-		  </nav>
-        </div>
+	<header id="header">
+
+	<div id="topNavMobile">
+		<nav id="mobileMenuLink" class="main-nav clear">
+			<ul><li class="active-link"><a>Menu</a></li></ul>
+		</nav>
+	</div>
+
 		
       <div id="logo">
        <h1 class="logo image" data-shrink-original-size="100">
@@ -198,5 +221,40 @@
     </path>
    </symbol>
   </svg>
+  
+  
+  
+  <script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get the "Menu" <li> element
+			let menuButton = document.querySelector("#topNavMobile li");
+
+			// Get the mobileNav div
+			let mobileNav = document.getElementById("mobileNav");
+
+			// ✅ Ensure the menu starts hidden
+			mobileNav.style.display = "none";
+
+			// Add click event to toggle visibility
+			menuButton.addEventListener("click", function () {
+				if (mobileNav.style.display === "none") {
+					mobileNav.style.display = "block"; // Show menu
+				} else {
+					mobileNav.style.display = "none"; // Hide menu
+				}
+			});
+		});
+	</script>
+	
+	<script>
+		window.addEventListener("resize", function () {
+			let mobileNav = document.getElementById("mobileNav");
+			if (window.innerWidth > 1400) {
+				mobileNav.style.display = "none";
+			}
+		});
+	</script>
+
+	
  </body>
 </html>
