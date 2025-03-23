@@ -107,8 +107,8 @@ a:hover{color:#1d6faa}
 
 .sqs-block-image .design-layout-card .intrinsic img,.sqs-block-image .design-layout-overlap .intrinsic img,.sqs-block-image .design-layout-collage .intrinsic img,.sqs-block-image .design-layout-stack .intrinsic img{ width:80% !important;height:auto !important;position:static !important}
 
-.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:7vw;}
-.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title p{font-family:mrs-eaves;font-weight:400;font-style:normal;letter-spacing:0em;text-transform:none;line-height:1.1em}
+.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:8vw;}
+.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title p{font-family:mrs-eaves;font-weight:800;font-style:bold;letter-spacing:0em;text-transform:none;line-height:1.1em}
 .image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-subtitle-wrapper{font-size:4.8vw}
 .image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-subtitle p{font-family:mrs-eaves;font-weight:400;font-style:normal;letter-spacing:.01em;text-transform:none;line-height:1.5em}
 
@@ -195,5 +195,6 @@ body{overflow:visible !important}
 @media only screen and (max-width: 768px) {.image-position-right .intrinsic {transform: translateX(60px);}}
 @media only screen and (max-width: 768px) {.image-position-right .image-subtitle {width: 140%;}}
 @media only screen and (max-width: 768px) {.image-position-left .image-subtitle {width: 120%;}}
+@media only screen and (max-width: 768px) {.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:18vw;}}
 
 
