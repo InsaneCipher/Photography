@@ -1,7 +1,8 @@
 /* Main Styling*/
 
-.social-links .sqs-svg-icon--wrapper{width:19px;height:19px;margin:0 2.47px}
-.social-icon-style-normal .social-links .sqs-svg-icon--wrapper{margin:0 5.605px}
+.social-links .sqs-svg-icon--wrapper{width:19px;height:19px;margin:10 2.47px}
+.social-icon-style-normal .social-links .sqs-svg-icon--wrapper{margin:20px 5.605px}
+.social-icon-style-normal .social-links .sqs-svg-icon--wrapper{padding-left:4px}
 .social-icon-style-normal .social-links .sqs-svg-icon--wrapper > div{transform:scale(2)}
 .social-icon-style-normal:not(.tweak-template-social-icon-standard-color) .social-links .sqs-use--icon{fill:#4c4343}
 .social-icon-style-normal:not(.tweak-template-social-icon-standard-color) .social-links:hover .sqs-use--icon{fill:rgba(76,67,67,.4)}
