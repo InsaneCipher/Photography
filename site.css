@@ -1,7 +1,7 @@
 /* Main Styling*/
 
-.social-links .sqs-svg-icon--wrapper{width:19px;height:19px;margin:10 2.47px}
-.social-icon-style-normal .social-links .sqs-svg-icon--wrapper{margin:20px 5.605px}
+.social-links .sqs-svg-icon--wrapper{width:19px;height:19px;margin:10px 2px}
+.social-icon-style-normal .social-links .sqs-svg-icon--wrapper{margin:20px 6px}
 .social-icon-style-normal .social-links .sqs-svg-icon--wrapper{padding-left:4px}
 .social-icon-style-normal .social-links .sqs-svg-icon--wrapper > div{transform:scale(2)}
 .social-icon-style-normal:not(.tweak-template-social-icon-standard-color) .social-links .sqs-use--icon{fill:#4c4343}
@@ -22,7 +22,7 @@ body,button,input,select,textarea{font-family:sans-serif;color:#222}
 a{color:#0085bd;text-decoration:none}
 
 ul,ol{margin:1em 0;padding:0 0 0 40px}
-nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}
+nav ul,nav ol{list-style:none;margin:0;padding:0}
 img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}
 img:not([src]){visibility:hidden}
 svg:not(:root){overflow:hidden}
@@ -43,9 +43,9 @@ a:hover{color:#1d6faa}
 .main-nav#secondaryNavigation a:hover,.main-nav#secondaryNavigation .folder li a:hover{color:#000}
 
 .main-nav{font-size:28px}
-.main-nav a{font-family:"Helvetica",arial,sans-serif;font-weight:bold;font-family:mrs-eaves;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0px;line-height:1.5em;font-size:28px;display:block;padding:.2em}
+.main-nav a{font-family: mrs-eaves, serif;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0;line-height:1.5em;font-size:28px;display:block;padding:.2em}
 .main-nav#secondaryNavigation{font-size:13px}
-.main-nav#secondaryNavigation a{font-family:"Helvetica",arial,sans-serif;font-weight:normal;font-family:proxima-nova;font-weight:400;font-style:normal;line-height:1.8em;text-transform:none;letter-spacing:0px;font-size:13px}
+.main-nav#secondaryNavigation a{font-family: proxima-nova, serif;font-weight:400;font-style:normal;line-height:1.8em;text-transform:none;letter-spacing:0;font-size:13px}
 .main-nav#secondaryNavigation .subnav a{line-height:1.2em}
 .main-nav+.main-nav{margin-top:20px}
 .main-nav li.folder .subnav{height:0;overflow:hidden;opacity:1}
@@ -63,12 +63,11 @@ a:hover{color:#1d6faa}
 #logo .logo.site-title a{color:#000}
 #logo .logo.image{line-height:0;margin:0;display:block;width:340px;max-width:250px}
 #logo .logo.image img{width:400px;max-width:260px}
-#logo .logo-subtitle{font-family:"Helvetica",arial,sans-serif;font-weight:normal;font-family:proxima-nova;font-weight:400;font-style:normal;line-height:1.4em;text-transform:none;letter-spacing:0px;font-size:12px;color:#aaa;margin-top:.5em}
-#logo .logo.site-title{font-family:"Wire One","Helvetica",arial,sans-serif;font-weight:normal;line-height:1em;letter-spacing:0px;font-family:mrs-eaves;font-weight:400;font-style:normal;line-height:1.2em;text-transform:none;letter-spacing:2px}
-
+#logo .logo-subtitle{font-family: proxima-nova, serif;font-weight:400;font-style:normal;line-height:1.4em;text-transform:none;letter-spacing:0;font-size:12px;color:#aaa;margin-top:.5em}
+#logo .logo.site-title{font-family: mrs-eaves, serif;font-weight:400;font-style:normal;line-height:1.2em;text-transform:none;letter-spacing:2px}
 #categoryNav,.category-nav-toggle-label{display:none;visibility:hidden}
 .show-category-navigation #categoryNav{display:block;visibility:visible}
-#categoryNav ul{margin:0 0 40px;font-family:"Helvetica",arial,sans-serif;font-weight:normal;font-size:13px;font-family:mrs-eaves;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0px;font-size:20px;line-height:1em}
+#categoryNav ul{margin:0 0 40px;font-family: mrs-eaves, serif;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0;font-size:20px;line-height:1em}
 #categoryNav ul li{display:inline-block;margin:0 2em 1em 0}
 #categoryNav ul li.filter{display:none}
 #categoryNav ul li a,#categoryNav ul li a:visited{color:#1f1f1f}
@@ -109,9 +108,9 @@ a:hover{color:#1d6faa}
 .sqs-block-image .design-layout-card .intrinsic img,.sqs-block-image .design-layout-overlap .intrinsic img,.sqs-block-image .design-layout-collage .intrinsic img,.sqs-block-image .design-layout-stack .intrinsic img{ width:80% !important;height:auto !important;position:static !important}
 
 .image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:8vw;}
-.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title p{font-family:mrs-eaves;font-weight:800;font-style:bold;letter-spacing:0em;text-transform:none;line-height:1.1em}
+.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title p{font-family: mrs-eaves, serif;font-weight:800;font-style:normal;letter-spacing:0;text-transform:none;line-height:1.1em}
 .image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-subtitle-wrapper{font-size:4.8vw}
-.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-subtitle p{font-family:mrs-eaves;font-weight:400;font-style:normal;letter-spacing:.01em;text-transform:none;line-height:1.5em}
+.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-subtitle p{font-family: mrs-eaves, serif;font-weight:400;font-style:normal;letter-spacing:.01em;text-transform:none;line-height:1.5em}
 
 
 /* Portfolio Styling*/
@@ -122,7 +121,7 @@ a:hover{color:#1d6faa}
 .collection-type-gallery #galleryWrapper{position:absolute;height:100%;width:100%;top:0;right:0}
 .collection-type-gallery.enable-gallery-thumbnails.thumbnail-view #slideshow{display:none !important}
 .collection-type-gallery.enable-gallery-thumbnails.thumbnail-view .overlay-controls{display:none}
-.collection-type-gallery #slideshowWrapper{height:100%;margin:100px;margin-left:340px;position:relative}
+.collection-type-gallery #slideshowWrapper{height:100%;margin: 100px 100px 100px 340px;position:relative}
 .collection-type-gallery #galleryWrapper{pointer-events: none;}
 
 
@@ -166,7 +165,7 @@ body:not(.show-category-navigation) #mobileNav .wrapper,body.show-category-navig
 #slideshow .slide{margin-bottom:20px;position:static !important;opacity:1 !important;visibility:visible !important;height:auto !important}
 #slideshow .slide img{position:static !important}
 
-.mobile-site-title-style-manual #logo .logo.site-title{font-family:"Wire One","Helvetica",arial,sans-serif;font-weight:normal;font-family:futura-pt;font-weight:700;font-style:normal;line-height:1.2em;text-transform:uppercase;letter-spacing:0px;font-size:30px}
+.mobile-site-title-style-manual #logo .logo.site-title{font-weight:normal;font-family: futura-pt, serif;font-style:normal;line-height:1.2em;text-transform:uppercase;letter-spacing:0;font-size:30px}
 #headerBlocks{display:none}
 body{overflow:visible !important}
 #canvas{padding:0}
@@ -196,6 +195,6 @@ body{overflow:visible !important}
 @media only screen and (max-width: 768px) {.image-position-right .intrinsic {transform: translateX(60px);}}
 @media only screen and (max-width: 768px) {.image-position-right .image-subtitle {width: 140%;}}
 @media only screen and (max-width: 768px) {.image-position-left .image-subtitle {width: 120%;}}
-@media only screen and (max-width: 768px) {.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:18vw;}}
+@media only screen and (max-width: 768px) {.image-block-card-dynamic-font-sizing .sqs-block-image .design-layout-card .image-title-wrapper{font-size:18vw;}}}
 
 
