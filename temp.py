@@ -18,6 +18,7 @@ def get_focal_length(img_path):
         print(f"Error with {img_path}: {e}")
     return None
 
+
 # Folder path
 folder_path = "D:/General/Documents/Photography/Edited/2025/"
 
